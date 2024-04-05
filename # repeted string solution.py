@@ -2,6 +2,8 @@
 # problem link in hackerrank
 # https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one
 
+
+
 def plusMinus(arr):
     # Write your code here
     NoPos=0
@@ -15,10 +17,13 @@ def plusMinus(arr):
         else:
             NoZe+=1
     
-    
 
-    print(NoPos/len(arr))
-    print(NoNeg/len(arr))
-    print(NoPos/len(arr))
+
+
+    print('{:.6f}'.format(NoPos/len(arr)))
+    print('{:.6f}'.format(NoNeg/len(arr)))
+    print('{:.6f}'.format(NoPos/len(arr)))
+
+    
 
 plusMinus([-4, 3, -9, 0, 4, 1])
